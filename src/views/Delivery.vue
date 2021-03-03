@@ -238,7 +238,7 @@
                                     </span>
                                 </v-col>
                                 <v-col cols="12" class="text-right">
-                                    <v-btn color="#E75C38" to="/sitio" dark>
+                                    <v-btn color="#E75C38" to="/" dark>
                                         Regresar
                                     </v-btn>
                                 </v-col>
@@ -436,7 +436,13 @@ export default {
       send() {
           this.errorQuiz = '';
           if (this.$refs.formQuiz.validate()) {
-              this.loading = true;
+
+              let letras = "abcdef"
+              let letra = letras[Math.floor(Math.random() * letras.length)];
+              this.resultado = letra;
+              this.finished = true;
+              this.started = false;
+              /*this.loading = true;
               this.sending = true;
               axios
                   .post("/sitio/functions/save.php", {
@@ -466,7 +472,7 @@ export default {
                   .finally(() => {
                       this.loading = false;
                       this.sending = false;
-                  });
+                  });*/
           } else {
               console.log("errores en formulario");
           }

@@ -14,9 +14,9 @@ Vue.use(VueRouter);
 
 const routes: Array<RouteConfig> = [
   {
-    path: '/sitio/',
+    path: '/',
     name: 'Full',
-    redirect: '/sitio/home',
+    redirect: '/home',
     component: Full,
     children: [
       {
