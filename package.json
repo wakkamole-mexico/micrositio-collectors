@@ -21,7 +21,7 @@
     "vue-scrollin": "^0.1.2",
     "vue-text-transition": "^1.0.19",
     "vue-video-player": "^5.0.2",
-    "vuetify": "^2.2.11",
+    "vuetify": "^2.6.10",
     "vuetify-video-parallax": "^1.0.2",
     "vuex": "^3.4.0"
   },
